@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url(../fonts/ProximaNovaT-Thin.ttf) format('truetype');
+    src: url(../fonts/ProximaNovaT-Thin.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url(../fonts/ProximaNova-Regular.ttf) format('truetype');
+    src: url(../fonts/ProximaNova-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Forever Brush Script';
+    src: url(../fonts/forever_brush_script.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+    /* Header */
+
+.header {
+    background: url(../img/headerBG.jpg) no-repeat center / cover;
+    width: 100%;
+    height: auto;
+    min-height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header__nav__block {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+.header__logo {
+    font-family: 'Proxima Nova Thin', sans-serif;
+    font-size: 31px;
+    font-weight: normal;
+    color: #fff;
+}
+.header__nav--menu {
+    list-style: none;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    display: flex;
+}
+.header__nav--menu li {
+    margin-right: 55px;
+}
+.header__nav--menu li:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.header__nav--menu li:hover:after {
+    opacity: 1;
+}
+.header__title__block {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header__title {
+    font-family: 'Proxima Nova Thin', sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+    color: #fff;
+}
+.header__subtitle {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+    /* Story */
+
+.story {
+    width: 100%;
+    height: auto;
+    min-height: 645px;
+    background-color: #962323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story__img {
+    margin-right: 8%;
+}
+.story__text__block {
+    width: 29.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story__title {
+    font-family: 'Forever Brush Script', serif;
+    font-size: 56px;
+    font-weight: normal;
+    color: #fff;
+}
+.story__title:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 55%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.story__text {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+    /* Menu */
+
+.signature {
+    width: 100%;
+    height: auto;
+    min-height: 485px;
+    background: url(../img/signRecipes.jpg) no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signature__title {
+    font-family: 'Forever Brush Script', serif;
+    font-size: 56px;
+    font-weight: normal;
+    color: #fff;
+}
+.signature__title:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 28%;
+    background-color: #c8235d;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.signature__text {
+    width: 31%;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+}
+.ourMenu {
+    width: 100%;
+    height: auto;
+    min-height: 905px;
+    background-color: #f3f4f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ourMenu__title {
+    font-family: 'Forever Brush Script', serif;
+    font-size: 56px;
+    font-weight: normal;
+    color: #000;
+}
+.ourMenu__title:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 28%;
+    background-color: #c8235d;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.ourMenu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 516px;
+    width: 100%;
+    margin-top: 5%;
+}
+.ourMenu__list__item {
+    max-width: 475px;
+    max-height: 85px;
+    margin-bottom: 50px;
+}
+.ourMenu__list__item--nameAndPrice {
+    display: flex;
+    justify-content: space-between;
+}
+.ourMenu__list__item--name {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #000;
+}
+.ourMenu__list__item--price {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #c8235d;
+}
+.ourMenu__list__item--descr {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #aaabad;
+    margin-top: 10px;
+}
+
+    /* Portfolio */
+
+.portfolio {
+    background-color: #25262a;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.portfolio__img {
+    width: 100%;
+    max-height: 365px;
+    margin: 0;
+    padding: 0;
+}
+
+    /* Footer */
+
+.footer {
+    width: 100%;
+    height: auto;
+}
+
+        /* Upper Footer */
+
+.footer__upper {
+    width: 100%;
+    height: auto;
+    min-height: 325px;
+    background-color: #25262a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__upper__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    max-height: 140px;
+    margin-left: 5%;
+}
+.footer__upper__block--logo {
+    font-family: 'Proxima Nova Thin', sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.footer__upper__block--text {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #fff;
+}
+.footer__upper__block--title {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.footer__upper__block--list {
+    list-style: none;
+}
+.footer__upper__block--list li {
+    margin-bottom: 20px;
+}
+.footer__link {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    transition: color .2s linear;
+}
+.footer__link:hover {
+    color: #000;
+}
+.contact__block {
+    display: flex;
+}
+.footer__icon {
+    color: #c0235a;
+    margin-right: 8%;
+}
+.footer__upper_block--list--contact {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+
+        /* Lower Footer */
+
+.footer__lower {
+    background-color: #16171b;
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__lower__copy {
+    display: flex;
+}
+.footer__lower__copy__text {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #8b8b8d;
+}
+.footer__lower__nav {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.footer__lower__nav--list {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #8b8b8d;
+    display: flex;
+    list-style: none;
+}
+.footer__lower__nav--list li {
+    margin-right: 30px;
+}
+.footer__lower__link {
+    transition: color .2s linear;
+}
+.footer__lower__link:hover {
+    color: #cecedc;
+}
+.footer__lower__icons--list {
+    color: #8b8b8d;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer__lower__icons--list li {
+    padding-right: 20%;
+}
